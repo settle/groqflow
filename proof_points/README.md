@@ -44,6 +44,7 @@ The following relates the proof point models with the version of the GroqWare Su
 | [MobileNetV2](computer_vision/mobilenetv2/) | 0.9.2
 | [ResNet50](computer_vision/resnet50/) | 0.9.2
 | [SqueezeNet](computer_vision/squeezenet/) | 0.9.2
+| [Yolo v6](computer_vision/yolo/) | 0.9.2
 
 ### Natural Language Processing
 
