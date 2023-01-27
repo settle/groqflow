@@ -17,7 +17,7 @@ setup(
     ),
     install_requires=[
         "onnx==1.11.0",
-        "onnxmltools==1.10.0",
+        "onnxmltools>=1.10.0",
         "hummingbird-ml==0.4.4",
         "scikit-learn==1.1.1",
         "xgboost==1.6.1",
