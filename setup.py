@@ -5,7 +5,7 @@ with open("groqflow/version.py", encoding="utf-8") as fp:
 
 setup(
     name="groqflow",
-    version=version["__version__"],
+    version=version,
     description="GroqFlow toolchain library",
     url="https://github.com/groq/groqflow",
     author="Groq",
