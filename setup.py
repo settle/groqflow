@@ -1,13 +1,12 @@
-import json
 from setuptools import setup, find_packages
 
-with open("groqflow/version.json", "r", encoding="utf8") as stream:
-    json_data = stream.read()
-    params = json.loads(json_data)
+version = {}
+with open("groqflow/version.py") as fp:
+    exec(fp.read(), version)
 
 setup(
     name="groqflow",
-    version=params["version"],
+    version=version["__version__"],
     description="GroqFlow toolchain library",
     url="https://github.com/groq/groqflow",
     author="Groq",
@@ -33,8 +32,6 @@ setup(
         "packaging",
     ],
     classifiers=[],
-    entry_points={
-        "console_scripts": [
-        ]
-    },
+    entry_points={"console_scripts": []},
+    python_requires="==3.8",
 )
