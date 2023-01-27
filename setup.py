@@ -33,7 +33,7 @@ setup(
     ],
     classifiers=[],
     entry_points={"console_scripts": []},
-    python_requires="==3.8",
+    python_requires="==3.8.*",
     long_description=open("README.md", "r").read(),
     long_description_content_type="text/markdown",
 )
