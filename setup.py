@@ -1,8 +1,7 @@
 from setuptools import setup, find_packages
 
-version = {}
-with open("groqflow/version.py") as fp:
-    exec(fp.read(), version)
+with open("groqflow/version.py", encoding="utf-8") as fp:
+    version = fp.read().split('"')[1]
 
 setup(
     name="groqflow",
@@ -16,12 +15,12 @@ setup(
         exclude=["*.__pycache__.*"],
     ),
     install_requires=[
-        "onnx>=1.11.0",
-        "onnxmltools>=1.10.0",
-        "hummingbird-ml>=0.4.4",
-        "scikit-learn>=1.1.1",
-        "xgboost>=1.6.1",
-        "onnxruntime>=1.10.0",
+        "onnx==1.11.0",
+        "onnxmltools==1.10.0",
+        "hummingbird-ml==0.4.4",
+        "scikit-learn==1.1.1",
+        "xgboost==1.6.1",
+        "onnxruntime==1.10.0",
         "paramiko==2.11.0",
         "torch>=1.12.1",
         "protobuf==3.17.3",
@@ -34,6 +33,6 @@ setup(
     classifiers=[],
     entry_points={"console_scripts": []},
     python_requires="==3.8.*",
-    long_description=open("README.md", "r").read(),
+    long_description=open("README.md", "r", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
 )
